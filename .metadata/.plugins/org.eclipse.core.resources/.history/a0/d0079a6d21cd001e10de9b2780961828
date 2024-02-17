@@ -1,0 +1,44 @@
+package application;
+
+import java.util.Iterator;
+import java.util.Locale;
+import java.util.Scanner;
+
+import entities.Department;
+import entities.Worker;
+import entities.enums.WorkerLevel;
+
+public class Program {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stu
+		Locale.setDefault(Locale.US);
+		Scanner sc = new Scanner(System.in);
+
+		System.out.println("Enter department's name:");
+		String departmentName = sc.nextLine();
+
+		System.out.println("Enter worker data");
+		System.out.println("Name:");
+		String workerName = sc.nextLine();
+		System.out.println("Level:");
+		String workerLevel = sc.nextLine();
+		System.out.println("Base salary");
+		double baseSalery = sc.nextDouble();
+		Worker worker = new Worker(workerName, WorkerLevel.valueOf(workerLevel), baseSalery,
+				new Department(departmentName));
+		System.out.println("How many contracts to this worker?");
+		int quantitiesContracts = sc.nextInt();
+		for (int i = 0; i < quantitiesContracts; i++) {
+			System.out.println("Enter contract #1 data:");
+			System.out.println("Date (DD/MM/YYYY):");
+			System.out.println("");
+			System.out.println("");
+			System.out.println("");
+			System.out.println("");
+		}
+		sc.close();
+
+	}
+
+}

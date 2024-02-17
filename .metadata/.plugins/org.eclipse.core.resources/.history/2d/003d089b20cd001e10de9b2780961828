@@ -1,0 +1,36 @@
+package application;
+
+import java.util.Iterator;
+import java.util.Locale;
+import java.util.Scanner;
+
+import entities.Worker;
+
+public class Program {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stu
+		Locale.setDefault(Locale.US);
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Enter department's name:");
+		String departmentName = sc.nextLine();
+		System.out.println("Enter worker data");
+		System.out.println("Name:");
+		String name = sc.nextLine();
+		System.out.println("Level:");
+		String workerLevel = sc.nextLine();
+		System.out.println("Base salary");
+		double baseSalery = sc.nextDouble();
+		
+		
+		Worker worker = new Worker(worker)
+		System.out.println("How many contracts to this worker?");
+		int quantitiesContracts = sc.nextInt();
+		for (int i = 0; i < quantitiesContracts; i++) {
+
+		}
+		sc.close();
+
+	}
+
+}
